@@ -1,0 +1,88 @@
+﻿@model   LFAForum.Models.LFAForumViewModel.CategoryPostModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container-fluid">
+
+
+    <div class="row">
+
+        <div class="col-md-8">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home">Top Posts</a></li>
+                <li><a data-toggle="tab" href="#topic">Top Topics</a></li>
+                <li><a data-toggle="tab" href="#announcement">Announcements</a></li>
+                <li style="margin-left:320px;"> @Html.Partial("_DropDownPartial")</li>
+
+            </ul>
+
+
+
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <ul>
+                        @foreach (var item in Model.PostList)
+                        {
+                            <hr />
+                            <li>
+                                <a>@Html.ActionLink(@item.Subject, "Details", "Posts", new { id = item.ID }, null)</a>
+                                <br>
+                                @item.Context
+                                @*<br />
+                                <p>Created On : @item.Created </p>*@
+                            </li>
+
+                        }
+
+                    </ul>
+                </div>
+
+                <div id="topic" class="tab-pane fade ">
+                    <ul>
+                        @foreach (var item in Model.TopicList)
+                        {
+                            <hr />  
+                            <li>
+                                @Html.ActionLink(@item.Subject ,"Details","Topics" , new { id = item.ID },null)
+
+                                <br />
+                                @foreach (var p in Model.TopicList.Where(x => x.ID == item.ID))
+                                {
+
+                                    @p.Created
+                                    <br />
+                                    <p> @p.User.FirstName  @p.User.LastName</p>
+
+                                }
+                                <hr />
+                            </li>
+
+                        }
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+        <div class="col-md-4">
+
+
+            <ul class="nav nav-pills nav-stacked">
+                <li id="categoryNavPill"><a href="#">Category</a></li>
+                @*@Html.Partial("_TopicNamePartial");*@
+                @foreach (var item in Model.CatList)
+            {
+                    <li> @item.Name</li>
+                }
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,14 @@
+﻿@model IEnumerable<LFAForum.Repo.Data.Category>
+
+    <ul class="nav nav-pills nav-stacked">
+        <li id="categoryNavPill"><a href="#">Category</a></li>
+        @foreach (var item in Model)
+        {
+
+            <li>
+                <a href="#">@Html.DisplayFor(modelItem =>item.Name)</a>
+            </li>
+        }
+
+    </ul>
+

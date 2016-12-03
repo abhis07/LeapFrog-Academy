@@ -1,0 +1,10 @@
+F:\Project\LeapFrog Academy Forum\LFAForum\LFAForum.Repo.Data\bin\Debug\LFAForum.Repo.Data.dll.config
+F:\Project\LeapFrog Academy Forum\LFAForum\LFAForum.Repo.Data\bin\Debug\LFAForum.Repo.Data.dll
+F:\Project\LeapFrog Academy Forum\LFAForum\LFAForum.Repo.Data\bin\Debug\LFAForum.Repo.Data.pdb
+F:\Project\LeapFrog Academy Forum\LFAForum\LFAForum.Repo.Data\bin\Debug\EntityFramework.dll
+F:\Project\LeapFrog Academy Forum\LFAForum\LFAForum.Repo.Data\bin\Debug\EntityFramework.SqlServer.dll
+F:\Project\LeapFrog Academy Forum\LFAForum\LFAForum.Repo.Data\bin\Debug\EntityFramework.xml
+F:\Project\LeapFrog Academy Forum\LFAForum\LFAForum.Repo.Data\bin\Debug\EntityFramework.SqlServer.xml
+F:\Project\LeapFrog Academy Forum\LFAForum\LFAForum.Repo.Data\obj\Debug\LFAForum.Repo.Data.csprojResolveAssemblyReference.cache
+F:\Project\LeapFrog Academy Forum\LFAForum\LFAForum.Repo.Data\obj\Debug\LFAForum.Repo.Data.dll
+F:\Project\LeapFrog Academy Forum\LFAForum\LFAForum.Repo.Data\obj\Debug\LFAForum.Repo.Data.pdb

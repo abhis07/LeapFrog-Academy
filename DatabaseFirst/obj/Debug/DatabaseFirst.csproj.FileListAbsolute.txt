@@ -1,0 +1,10 @@
+F:\Project\LeapFrog Academy Forum\LFAForum\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+F:\Project\LeapFrog Academy Forum\LFAForum\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+F:\Project\LeapFrog Academy Forum\LFAForum\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+F:\Project\LeapFrog Academy Forum\LFAForum\DatabaseFirst\bin\Debug\EntityFramework.dll
+F:\Project\LeapFrog Academy Forum\LFAForum\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+F:\Project\LeapFrog Academy Forum\LFAForum\DatabaseFirst\bin\Debug\EntityFramework.xml
+F:\Project\LeapFrog Academy Forum\LFAForum\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+F:\Project\LeapFrog Academy Forum\LFAForum\DatabaseFirst\obj\Debug\DatabaseFirst.csprojResolveAssemblyReference.cache
+F:\Project\LeapFrog Academy Forum\LFAForum\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+F:\Project\LeapFrog Academy Forum\LFAForum\DatabaseFirst\obj\Debug\DatabaseFirst.pdb

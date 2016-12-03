@@ -1,0 +1,67 @@
+﻿body {
+   
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#topNav {
+    margin-top:-50px;
+    background-color:#FFFFFF;
+    border:none;
+}
+#mainNav {
+    margin-top:-20px;
+    border:none;
+    background-color:#293A4A;
+   
+}
+ 
+
+#mainNav .navbar-nav li a{
+    color:#fff;
+    font-family:Monospace;
+    font-size:15px;
+    font-weight:200;
+}
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+#forumName {
+    color:red;
+}
+#topNav .navbar-brand {
+    color:Black;
+    font-family:Comic Sans MS;
+}
+#loginPartial li a{
+    font-family:Comic Sans MS;
+    color:black;
+    font-size:15px;
+}
+
+#loginPartial li i{
+   margin-top:20px;
+   margin-left:15px;
+}

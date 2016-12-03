@@ -1,0 +1,14 @@
+F:\Project\LeapFrog Academy Forum\LFAForum\GR.LFAForum.Repository\bin\Release\GR.LFAForum.Repository.dll.config
+F:\Project\LeapFrog Academy Forum\LFAForum\GR.LFAForum.Repository\bin\Release\GR.LFAForum.Repository.dll
+F:\Project\LeapFrog Academy Forum\LFAForum\GR.LFAForum.Repository\bin\Release\GR.LFAForum.Repository.pdb
+F:\Project\LeapFrog Academy Forum\LFAForum\GR.LFAForum.Repository\bin\Release\DatabaseFirst.dll
+F:\Project\LeapFrog Academy Forum\LFAForum\GR.LFAForum.Repository\bin\Release\EntityFramework.dll
+F:\Project\LeapFrog Academy Forum\LFAForum\GR.LFAForum.Repository\bin\Release\EntityFramework.SqlServer.dll
+F:\Project\LeapFrog Academy Forum\LFAForum\GR.LFAForum.Repository\bin\Release\Ninject.dll
+F:\Project\LeapFrog Academy Forum\LFAForum\GR.LFAForum.Repository\bin\Release\DatabaseFirst.pdb
+F:\Project\LeapFrog Academy Forum\LFAForum\GR.LFAForum.Repository\bin\Release\EntityFramework.xml
+F:\Project\LeapFrog Academy Forum\LFAForum\GR.LFAForum.Repository\bin\Release\EntityFramework.SqlServer.xml
+F:\Project\LeapFrog Academy Forum\LFAForum\GR.LFAForum.Repository\bin\Release\Ninject.xml
+F:\Project\LeapFrog Academy Forum\LFAForum\GR.LFAForum.Repository\obj\Release\GR.LFAForum.Repo.csprojResolveAssemblyReference.cache
+F:\Project\LeapFrog Academy Forum\LFAForum\GR.LFAForum.Repository\obj\Release\GR.LFAForum.Repository.dll
+F:\Project\LeapFrog Academy Forum\LFAForum\GR.LFAForum.Repository\obj\Release\GR.LFAForum.Repository.pdb

@@ -1,0 +1,90 @@
+﻿@model LFAForum.Models.LFAForumViewModel.TopicPostViewModel
+
+@*@model IEnumerable<LFAForum.Repo.Data.Post>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Status.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Topic.Subject)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Subject)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Context)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Created)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Topic.Subject)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Subject)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Context)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Created)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>*@
+
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#">All Post</a></li>
+    <li><a href="#">New Post</a></li>
+    <li><a href="#">Featured</a></li>
+    <li style="margin-left:320px;"> @Html.Partial("_DropDownPartial")</li>
+</ul>
+<ul>
+
+    @foreach (var item in Model.PostList)
+    {
+
+        <li>
+            @Html.ActionLink(@item.Subject, "Details", new { id = item.ID })
+            <br />
+            @foreach (var p in Model.PostList.Where(x => x.ID == item.ID))
+            {
+                @p.Context
+            }
+            <hr />
+        </li>
+
+    }
+
+</ul>

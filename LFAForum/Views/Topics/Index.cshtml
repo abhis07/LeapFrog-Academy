@@ -1,0 +1,101 @@
+﻿@model LFAForum.Models.LFAForumViewModel.TopicPostViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@*<h2>All Topics</h2>*@
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>*@
+@*<table class="table">
+    <tr>
+        <th>
+            <strong>Category</strong>
+        </th>
+        <th>
+           <strong>Status</strong>
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Subject)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Created)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Subject)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Created)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>*@
+
+
+<div class=" row">
+    <div class="col-md-8">
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">All Topics</a></li>
+            <li><a href="#">New Topics</a></li>
+            <li><a href="#">Featured</a></li>
+            <li style="margin-left:320px;"><button class="btn btn-primary">Add New Topic</button></li>
+        </ul>
+        <ul>
+
+            @foreach (var item in Model.TopicList)
+            {
+
+                <li>
+                    @Html.ActionLink(@item.Subject, "Details", new { id = item.ID })
+
+                    <br />
+                    @foreach (var p in Model.TopicList.Where(x => x.ID == item.ID))
+                    {
+
+                        @p.Created
+                        <br />
+                        <p> @p.User.FirstName  @p.User.LastName</p>
+
+                    }
+                    <hr />
+                </li>
+
+            }
+
+        </ul>
+    </div>
+
+    <div class="col-md-4">
+
+    </div>
+
+</div>
+
+
+

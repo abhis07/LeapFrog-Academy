@@ -1,0 +1,17 @@
+﻿@model LFAForum.Models.LFAForumViewModel
+
+    <ul class="nav nav-tabs">
+    <li class="active"><a href="#">Topics</a></li>
+    <li><a href="#">Questions</a></li>
+    <li><a href="#">Announcements</a></li>
+    <li style="margin-left:320px;"> @Html.Partial("_DropDownPartial")</li>
+</ul>
+
+<div>
+    <ul>
+        @foreach (var item in Model. )
+        {
+            <li>@item</li>
+        }
+    </ul>
+</div>
